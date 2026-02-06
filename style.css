@@ -1,53 +1,57 @@
+/* Styling CV page */
+ body
+   {
+     font-family: "Source Code Pro", monospace,Arial, Helvetica, sans-serif; /* Use Google Font for modern monospace look and font stack as backup fonts */
+     font-size: 16px; /* Set a base font size */
+     line-height: 2; /* Increase line height for better readability */
+     color: #010301; /* black color for the text */
+     background-color:#fdfcfc  /* Set light silver color for  background  appearance */
+}  
 
-h1{
-  color:#000107;
-  text-shadow:rgb(194, 190, 193) 3px 2px 2px;
-  text-decoration:solid  underline rgb(90, 227, 74) ; /*overline line-through*/
-  text-underline-offset: 5px;
+img 
+    {
+      display: block; /* img default display is  inline,to center it using marign:auto declaration  need to convert it to block display(margin:auto doesn't have effect on inline elements)  */
+      margin: auto; /*center image in the middile */
+  
+}
+.main-header{
+      text-align:center; /*enter address link with image for more orgnized  apperance */
+      line-height: .5; /* reduce line hegith to reduce space reserved for image and header section*/
+      text-decoration: none;
+      word-spacing: -3px; /* reduce space between words to bring elements to the center*/
+      letter-spacing: -0.5px; /* reduce space between letters to bring elements to the center*/
+       font-style:none;
+
+}
+     
+
+a:visited{
+       color:rgb(78, 88, 165); /* light blue  color for visited link to differentiate  visted link */
+      text-decoration: none;
 
 }
 
-.qa-list dt {
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin-top: 20px;
-  color: #2d3436;
-}
-.qa-list dd {
-  font-size:1.3rem;
-  margin-left: 5px; /* Removes the default indentation */
-  padding-left: 20px;
-  border-left: 2px solid #155ba2; /* Adds a visual vertical line for the answer */
-  margin-bottom: 30px;
-  color: #181c1d;
-  background-color:#f4f4f4;
+a
+{
+  text-decoration: none; /* Removing default underline from links */
+  color: #081fcc; /* A blue color match with familiar web link colr for links for better distinction */
 }
 
-.qa-list pre {
-  background: #f1eeee;
-  padding: 10px;
-  border-radius: 5px;
+/* Styling for list items */
+li
+{
+  font-size: 1rem; /* Set the same font size as paragraphs */
 }
 
-.qa-mark { 
-  color: rgb(187, 3, 25);
-  font-size:2.1rem;
-  font-weight: bold;
+/* Styling for table */
+table
+{
+  font-size: 1rem; /* Set the same font size as paragraphs */
 }
 
-.qa-number{
-   color:rgb(10, 190, 61);
-   font-size:1.3rem;
+/* Styling for form */
+form
+{
+  font-size: 1rem; /* Set the same font size as paragraphs */
 }
 
-.a-bullet{
-   color:rgb(10, 190, 61);
-   font-size:1.8rem;
-
-}
-.sub-title{
-
-color:rgb(4, 124, 38);
-   font-size:1.3rem; 
-   font-weight:bold; 
-}

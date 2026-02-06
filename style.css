@@ -1,19 +1,11 @@
 /* Styling CV page */
- body
-   {
-     font-family: "Source Code Pro", monospace,Arial, Helvetica, sans-serif; /* Use Google Font for modern monospace look and font stack as backup fonts */
-     font-size: 16px; /* Set a base font size */
-     line-height: 2; /* Increase line height for better readability */
-     color: #010301; /* black color for the text */
-     background-color:#fdfcfc  /* Set light silver color for  background  appearance */
-}  
-
-img 
-    {
-      display: block; /* img default display is  inline,to center it using marign:auto declaration  need to convert it to block display(margin:auto doesn't have effect on inline elements)  */
-      margin: auto; /*center image in the middile */
-  
+/* Use border-box in all elements. */
+*
+{
+  box-sizing: border-box;
 }
+
+
 .main-header{
       text-align:center; /*enter address link with image for more orgnized  apperance */
       line-height: .5; /* reduce line hegith to reduce space reserved for image and header section*/
@@ -23,35 +15,105 @@ img
        font-style:none;
 
 }
-     
 
-a:visited{
-       color:rgb(78, 88, 165); /* light blue  color for visited link to differentiate  visted link */
-      text-decoration: none;
+ body
+   {
+     font-family: "Source Code Pro", monospace,Arial, Helvetica, sans-serif; /* Use Google Font for modern monospace look and font stack as backup fonts */
+     font-size: 16px; /* Set a base font size */
+     margin:2rem;
+     padding:2rem;
+     color: #010301; /* black color for the text */
+     background-color:#fdfcfc;  /* Set light silver color for  background  appearance */
+     border:2px solid #e8ece8; /* add a solid border with ligth color */
 
+}  
+h1{
+    font-size:2.0rem;/* set large outstanding color for h1*/
+    text-align:center; /* align text to center*/
+    text-shadow:3px 3px 5px rgba(83, 91, 101, 0.7); /* add drop shadow effect */
+    
+
+}
+h2{
+
+    font-size:1.6rem; /* sat a moderate font size revelent to view port*/
+    font-weight:600;/* make it slightly bolder for differentiation*/
+    text-transform:uppercase; /* transform text to uper case*/
+}
+h3
+{
+  font-size: 1.2rem; /* A size between h1 and p */
+}
+/* add padding below headers clear layout */
+h1, h2, h3
+{
+  padding-bottom: 1rem;
+}
+p,li, table, form /* set unified fnot size for  li, table, form*/
+{
+  font-size: 1rem;
 }
 
 a
 {
   text-decoration: none; /* Removing default underline from links */
-  color: #081fcc; /* A blue color match with familiar web link colr for links for better distinction */
+  color: #0c06d2; /* A slightly lighter shade for links for better distinction */
+}
+a:visited{
+       color:rgb(69, 78, 145); /* light blue  color for visited link to differentiate  visted link */
+      text-decoration: none;
+
 }
 
-/* Styling for list items */
-li
+/* Separate sections with margins to utilize collapsing margins. Also, use borders to space them apart. */
+main section,
+footer section
 {
-  font-size: 1rem; /* Set the same font size as paragraphs */
+  margin: 4rem 0;
+  border-top: 2px solid #e1e2e8;
 }
 
-/* Styling for table */
-table
+/* Adjust form elements to capture same look and feel. */
+form input,
+form textarea,
+form select
 {
-  font-size: 1rem; /* Set the same font size as paragraphs */
+  margin: 0.3rem 0.3rem; /*add margin  set space between from elements */
+  padding: 0.2rem 0.2rem;/*add margin  set space between from elements */
+  color: #120101;
+  border: 2px dotted #dddfdd;
+  background-color: #f4f7fa;
+}
+form fieldset
+{
+  border: none;
 }
 
-/* Styling for form */
-form
+form button
 {
-  font-size: 1rem; /* Set the same font size as paragraphs */
+  padding: 0.5rem 1rem;
+  color: #090a09;
+  border: 2px solid #e1e5ef;
+  background-color: #d2eaf5;
 }
+
+/* Remove outlines from form elements, ensuring a cleaner look. */
+form input,
+form textarea
+{
+  outline: none;
+
+}
+
+/* Make the profile picture rounded, and add a border. */
+.main-header img 
+{
+  border-radius: 50%;
+}
+
+
+
+
+
+
 
